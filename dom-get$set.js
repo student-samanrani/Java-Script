@@ -1,0 +1,26 @@
+var element;
+element = document.getElementById("header").innerText;
+console.log(element);
+element = document.getElementById("header").innerHTML;
+console.log(element);
+element = document.getElementById("header").getAttribute("id");
+console.log(element);
+element = document.getElementById("header").getAttributeNode("onClick");
+console.log(element);
+element = document.getElementById("header").attributes;
+console.log(element);
+element = document.getElementById("header").attributes[1].value;
+console.log(element);
+element = document.getElementById("header").innerText = "Pak Secret Agent";
+console.log(element);
+element = document.getElementById("header").innerHTML = '<div class="first">Pak Secret Agent</div>';
+console.log(element);
+document.getElementById("header").setAttribute("class", "xyz");
+console.log(element);
+element = document.getElementById("header").getAttribute("class");
+console.log(element);
+element = document.getElementById("header").attributes[1].value= "bts";
+console.log(element);
+element = document.getElementById("header").removeAttribute("style");
+console.log(element);
+

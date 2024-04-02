@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome console</title>
+</head>
+<body>
+    <h2 id="main" style="color:rgb(226, 43, 165);">Google Chrome Console:</h2>
+    <script>
+        var x =38;
+        document.write("This value of x=38 will be displayed on console using <span style='color:deeppink;'>console.log()</span>  command");
+         console.log(x);
+         document.write("<br>");
+         var y = [1,2,3];
+         document.write("This table will be displayed on console using <span style='color:rgb(192,0,0);'>console.table()</span> command");
+         console.table(y);
+         document.write("<br>");
+         document.write("This error displayed will be on console using <span style='color:red;'>console.error()</span> command");
+         console.error("something went wrong");
+         document.write("<br>");
+         document.write("This warning displayed will be on console using <span style='color:#0000ff;'>console.warn()</span> command");
+         console.warn("warning");
+         document.write("<br>");
+         document.write("This time displayed will be on console using <span style='color:#CC00FF;'>console.table()</span> command");
+        console.time("test");
+        console.warn("something went wrong");
+        console.warn("something went wrong");
+        console.warn("something went wrong");
+        console.warn("something went wrong");
+        console.warn("something went wrong");
+        console.timeEnd("test");
+        document.write("<br>");
+        document.write("we can pass also write data on document using console if we write <span style='color:#009933;'>document.write()</span> command");
+        document.write("<br>");
+        document.write("we can also get id using console if we write <span style='color:#CCCC00;'>document.getElementById()</span> command");
+        document.write("<br>");
+        document.write("we can also get id inner text using console if we write <span style='color:#008080;'>document.getElmentById().innerText</span> command");
+        document.write("<br>");
+        document.write("we can also get id inner html using console if we write <span style='color:saddlebrown;'>document.getElmentById().innerHTML</span> command"); 
+    </script>
+</body>
+</html>

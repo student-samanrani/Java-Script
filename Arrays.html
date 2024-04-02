@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h2 style="color:rgb(226, 43, 43);">Arrays:</h2>
+    <script>
+        var ary = [10,20,30,40,50];
+        var sum=0;
+        document.write("<span style='color:green;'>Array numeric example:</span><br>");
+        document.write("<ul>");
+        for(var a=0; a<=4; a++){
+            document.write("<li>index " + a + " : " + ary[a] + "</li>");
+            sum = sum + ary[a];
+        }
+        document.write("</ul>");
+        document.write("Total sum : " + sum + "<br>");
+        document.write("<span style='color:green;'>Array string example:</span><br>");
+        var ary = ["Saman","Azlan","Roshany","Ali","Wasif"];
+        document.write("<ul>");
+        for(var a=0; a<5; a++){
+            document.write("<li>index " + a + " : " + ary[a] + "</li>");
+        }
+        document.write("</ul>");
+        document.write("<span style='color:green;'>create Array in other way:</span><br>");
+        var ary = new Array();
+        for(var g=0; g<3; g++){
+            ary[g] = prompt("Enter the value: ");
+        }
+        document.write("<ul>");
+        for(var a=0; a<3; a++){
+            document.write("<li>" + ary[a] + "</li>");
+        }
+        document.write("</ul>");
+        document.write("<span style='color:green;'>Multi-Dimentional Arrays:</span><br>");
+        var ary = [
+            ["Saman",18,"Female","BS"],
+            ["Sundas",18,"Female","BS"],
+            ["Iram",18,"Female","BS"],
+            ["Aini",18,"Female","BS"]
+        ];
+        document.write("Array length is : ");
+        document.write(ary.length);
+        document.write("<table border = '1px' cellspacing ='0'>");
+        for(var a=0; a<ary.length; a++){
+            document.write("<tr>");
+            for(var b=0; b<4; b++){
+                document.write("<td>" + ary[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        document.write("<br>");
+        document.write("<span style='color:green;'>Modified Array Elements :</span><br>");
+        var ary = ["Saman",18,"Female","BS"];
+        document.write("Before Modified Elements :");
+        document.write(ary + "<br>");
+        document.write("After Modified Elements :");
+        ary[0] = "Azlan";
+        ary[2] = "Male";
+        document.write(ary + "<br>");
+        var ary = ["Saman",18,"Female","BS"];
+        document.write("Before Deleted Elements :");
+        document.write(ary + "<br>");
+        document.write("After Deleted Elements :");
+        delete ary[1] ;
+        document.write(ary + "<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String method</title>
+</head>
+<body>
+    <h2 style="color:#8214dc;">String Method:</h2>
+    <script>
+         document.write("<span style='color:green;'>String length method : </span><br>");
+        var str = "Jihan Sikandar";
+        document.write(str);
+        document.write("<br>");
+        var a = str.length;
+        document.write("length is : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.toLowerCase();
+        document.write("In LowerCase is : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.toUpperCase();
+        document.write("In UpperCase is : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.includes("Sikandar");
+        document.write("Includes  : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.startsWith("Sikandar");
+        document.write("Start with : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.endsWith("Sikandar");
+        document.write("End with : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.search("Sikandar");
+        document.write("search word index : ");
+        document.write(a);
+        document.write("<br>");
+        var s = "javascript is a great is language."
+        var a = s.match(/is/g);
+        document.write("match character : ");
+        document.write(a);
+        document.write("<br>");
+        var a = s.indexOf("is");
+        document.write("Indexof character : ");
+        document.write(a);
+        document.write("<br>");
+        var a = s.lastIndexOf("is");
+        document.write("Last Indexof character : ");
+        document.write(a);
+        document.write("<br>");
+        var a = s.replace("javascript" , "PHP");
+        document.write("Replace character : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.charAt(6);
+        document.write("character At position 6 : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.charCodeAt(6);
+        document.write("ASCII code of pos 6 character : ");
+        document.write(a);
+        document.write("<br>");
+        var a = String.fromCharCode(37);
+        document.write("character of ASCII code : ");
+        document.write(a);
+        var str2 = "hey! ";
+        document.write("<br>");
+        var a = str2.concat(str);
+        document.write("concat strings : ");
+        document.write(a);
+        document.write("<br>");
+        var a = s.split("i");
+        document.write("Split array from i: ");
+        document.write(a);
+        document.write("<br>");
+        var a = str2.repeat(4);
+        document.write("Repeat strings 4 times : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.slice(6,12);
+        document.write("slice string : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.substr(6,12);
+        document.write("Substr strings : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.substring(6,12);
+        document.write("Substring strings : ");
+        document.write(a);
+        document.write("<br>");
+        var a = str.toString();
+        document.write("Tostrings : ");
+        document.write(a + 20);
+        document.write("<br>");
+        var a = str.valueOf();
+        document.write("valueof strings : ");
+        document.write(a);
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Statement</title>
+</head>
+<body>
+    <h2 style="color:rgb(92, 43, 226);">IF Statement :</h2>
+    <script>
+        var a = 100;
+var b = 10;
+document.write(" <span style='color:#CC00FF;'>Only IF statement:</span>");
+document.write("<br>");
+if (a > b) {
+    document.write("A is greater.");
+}
+document.write("<br>");
+if(a != b){
+    document.write("A is not equal to B");
+}
+document.write("<br>");
+document.write("<span style='color:#CC00FF;'>IF statement with logical operators: </span>");
+   var age=20;
+   if(age >= 18 && age <= 21){
+    document.write("<br>");
+    document.write("Using <span style='color: green;'>AND </span> logical operator:");
+    document.write("<br>");
+    document.write("If you are above 18  AND under 21 then yes you are dependent.");
+   }
+   if(age >= 18 || age <= 21){
+    document.write("<br>");
+    document.write("Using <span style='color: green;'> OR </span> logical operator:");
+    document.write("<br>");
+    document.write("you are child OR young");
+   }
+  if( ! (age == 2)){
+    document.write("<br>");
+    document.write("Using <span style='color: green;'> NOT </span> logical operator:");
+    document.write("<br>");
+    document.write("age is NOT eual to true");
+   }
+   
+   
+   
+   </script>
+</body>
+</html>

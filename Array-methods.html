@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h2 style="color:rgb(128, 43, 226);">Array Methods:</h2>
+    <script>
+     document.write("<span style='color:green;'>Sort() And IsArray() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Roshany", "Aqsa"];
+    var originalArray = a.slice(); // Clone the array to store orignal array values
+    document.write("Before sorting values: <br>");
+    document.write(originalArray.join(" , ") + "<br>");
+    a.sort();// Sort the array
+    document.write("After sorting values: <br>");
+    document.write(a.join(" , ") + "<br>");//join is used to seprate a string in result with some value
+    document.write("<span style='color:red;'>Is veriable A array ? : </span>");
+    var b = Array.isArray(a);
+    document.write(b);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Reverse() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany"];
+    document.write("Before Reverse values: <br>");
+    document.write(a.join(" , ") + "<br>");
+    a.reverse();
+    document.write("After reverse values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Pop() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany"];
+    document.write("Before Pop values: <br>");
+    document.write(a.join(" , ") + "<br>");
+    a.pop();
+    document.write("After Pop values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Push() Method:</span><br>");
+    var a = ["Sadia", "Azlan", "Aqsa", "Roshany"];
+    document.write("Before push values: <br>");
+    document.write(a.join(" , ") + "<br>");
+    a.push("Ali , Saman");
+    document.write("After push values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Shift() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany"];
+    document.write("Before Shift values: <br>");
+    document.write(a.join(" , ") + "<br>");
+    a.shift();
+    document.write("After Shift values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Unshift() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany"];
+    document.write("Before Unshift values: <br>");
+    document.write(a.join(" , ") + "<br>");
+    a.unshift("Ali");
+    document.write("After Unshift values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Concat() Method:</span><br>");
+    var a = ["Saman", 18,  "BS"];
+    var b = ["Ali","CA"];
+    var c = a.concat(b);
+    document.write(c);
+    document.write("<br>");
+    document.write("Using join method : " + "<br>");
+    var d = c.join("-");
+    document.write(d);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Slice() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany","Ali"];
+    document.write("Array values: <br>");
+    document.write(a.join(" , ") + "<br>");
+    var b = a.slice(1,4);
+    document.write("Slice values: <br>");
+    document.write(b.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Splice() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany","Ali"];
+    document.write("Before Splice values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    a.splice(2 , 2 , "Usman","Noman");
+    document.write("After Splice values: <br>");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Indexof() and Lastindexof() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany","Ali"];
+    document.write("Index of name Roshany : ");
+    document.write(a.indexOf("Roshany",2));
+    document.write("<br>");
+    document.write("Index of name Haya : ");
+    document.write(a.indexOf("Haya"));
+    document.write("<br>");
+    document.write("Using lastindexof method : <br>");
+    document.write("Index of name Ali : ");
+    document.write(a.lastIndexOf("Ali"));
+    document.write("<br>");
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+var element;
+document.querySelector("#header").innerText = "Pak Secret Agent";
+element = document.querySelector("#header").innerText;
+console.log(element);
+element = document.querySelector("#header").innerHTML = '<div class="first">Pak Secret Agent</div>';
+console.log(element);
+element = document.querySelector("#header").getAttribute("class");
+console.log(element);
+element = document.querySelectorAll("ul")[1].innerHTML;
+console.log(element);
+element = document.querySelectorAll("list");
+console.log(element);

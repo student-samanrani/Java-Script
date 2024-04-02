@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+    document.write("<h3>Function without parameters:</h3>");
+    function firstf(){
+     document.write("Hello Majer Ali!");
+     document.write("<br>");
+     document.write("This is my first function Major!");
+    }
+    function secondf(){
+     document.write("Hello Capton Saman!");
+     document.write("<br>");
+     document.write("This is my second function Capton!");
+    }
+    firstf();
+    document.write("<br>");
+    secondf();
+    document.write("<h3>Function with parameters:</h3>");
+    function thirdf(fname ="Saman",lname ="Rani"){
+     document.write("hey! " + fname + " " + lname );
+    }
+    document.write("function default value: &nbsp;");
+    thirdf();
+    document.write("<br>");
+    document.write("function parameterized value: &nbsp;");
+    thirdf("Azlan","Ali");
+    document.write("<br>");
+    document.write("function update value: &nbsp;");
+    thirdf("Roshany","Ali");
+    document.write("<br>");
+    function mul(a,b){
+     document.write("a * b = ");
+     document.write(a*b);
+    }
+    mul(2,3);
+    document.write("<br>");
+    mul(10,5);
+    document.write("<h3>Function with Return Values:</h3>");
+    function fullname(fname ="Saman",lname ="Rani"){
+     var a = fname + " - " + lname ;
+     return a;
+    }
+    var fn = fullname();
+     document.write(fn);
+     document.write("<br>");
+     function sum(math,phy,chem){
+     var s = math + phy + chem;
+     return s;
+    }
+     function percentage(tt){
+     var p = tt/300 * 100;
+     document.write(p);
+    }
+     document.write("<br>");
+    var total= sum(95,95,95);
+    document.write("Total Marks: ");
+     document.write(total);
+     document.write("<br>");
+     document.write("Percentage: ");
+     percentage(total);
+     document.write("<h3>Lacal & Global veriables:</h3>");
+     function sum(math,phy,chem){
+     var s = math + phy + chem;
+     return s;
+    }
+    var a = "Pak Camando";
+    function hello(){
+    document.write("A is Global veriable and can be access outside the function: &nbsp;");
+    document.write(a);
+    document.write("<br>");
+    document.write("B is Local veriable and only access in function: &nbsp;");
+    var b = "Pak Navy";
+    document.write(b);
+}
+    hello();
+    document.write("<br>");
+    document.write("A is acccessed outside the function:&nbsp;");
+    document.write(a);
+    
+
+</script>
+
+</body>
+</html>

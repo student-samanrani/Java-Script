@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+</head>
+<body>
+    <h2 style="color:rgb(73, 226, 43);">Number Methods:</h2>
+   <script>
+    var a =  "99";
+    var n = Number(a);
+    document.write("<span style='color:purple;'>Number  is </span> : ");
+    document.write(n + 10);
+    document.write("<br>");
+    var a =  "56.4";
+    var n = Number.parseInt(a);
+    document.write("<span style='color:purple;'>parseInt is</span> : ");
+    document.write(n);
+    document.write("<br>");
+    var a =  "23.7";
+    var n = Number.parseFloat(a);
+    document.write("<span style='color:purple;'>parseFloat is</span> : ");
+    document.write(n);
+    document.write("<br>");
+    var a =  Infinity;
+    var n =  Number.isFinite(a);
+    document.write("<span style='color:purple;'>isFinite</span> : ");
+    document.write(n);
+    document.write("<br>");
+    var a = 77;
+    var n = Number.isInteger(a);
+    document.write("<span style='color:purple;'>isInteger</span> : ");
+    document.write(n);
+    document.write("<br>");
+    var a = 77.789;
+    var n = a.toFixed(2);
+    document.write("<span style='color:purple;'>toFixed 2</span>: ");
+    document.write(n);
+    document.write("<br>");
+    var a = 77.789;
+    var n = a.toPrecision(3);
+    document.write("<span style='color:purple;'>toPrecision 3</span> : " );
+    document.write(n);
+    document.write("<br>");
+</script>
+</body>
+</html>

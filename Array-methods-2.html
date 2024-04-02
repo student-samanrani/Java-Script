@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array method ||</title>
+</head>
+<body>
+    <h2 style="color:rgb(226, 43, 43);">Array Methods:</h2>
+   <script>
+   document.write("<span style='color:green;'>Include() Method:</span><br>");
+    var a = ["Saman", "Azlan", "Aqsa", "Roshany","Ali"];
+    document.write("Array values : ");
+    document.write(a.join(" , "));
+    document.write("<br>");
+    document.write("Search item in Array : ");
+    var b = a.includes("Saman");
+    document.write(b);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<span style='color:green;'>Some() Method:</span><br>");
+    var age = [10,13,18,20];
+    document.write(" Ages : <br>");
+    document.write(age + "<br>");
+    document.write("The passed value : ");
+    var b = age.some(checkAdult);
+    document.write(b + "<br>");
+    function checkAdult(ages){
+     return ages >= 18;
+    }
+    document.write("<br>");
+    document.write("<span style='color:green;'>Find() and FindIndex() Method:</span><br>");
+    var age = [10,23,18,20];
+    document.write(" Ages : <br>");
+    document.write(age + "<br>");
+    document.write("The passed value : ");
+    var b = age.find(checkAdult);
+    document.write(b + "<br>");
+    function checkAdult(ages){
+     return ages >= 18;
+    }
+    document.write("The passed value index : ");
+    var b = age.findIndex(checkAdult);
+    document.write(b + "<br>");
+    function checkAdult(ages){
+     return ages >= 18;
+    }
+    document.write("<br>");
+    document.write("<span style='color:green;'>filter() Method:</span><br>");
+    var age = [10,13,18,20,34];
+    document.write(" Ages : <br>");
+    document.write(age + "<br>");
+    document.write("The passed value : ");
+    var b = age.filter(checkAdult);
+    document.write(b + "<br>");
+    function checkAdult(ages){
+     return ages >= 18;
+    }
+    document.write("<br>");
+    document.write("<span style='color:green;'>toString(), valueOf() and fill() Method:</span><br>");
+    var x = ["Saman", "Azlan", "Aqsa", "Roshany","Ali"];
+    document.write("<span style='color:red;'>Tostring : </span><br>");
+    document.write(" Array : ");
+    document.write(x+ "<br>");
+    x.toString();
+    document.write("String : ");
+    var b = x.valueOf();
+    document.write(b);
+    document.write("<br>");
+    document.write("<span style='color:red;'>Valueof Array : </span><br>");
+    var b = x.valueOf();
+    document.write(b);
+    document.write("<br>");
+    document.write("<span style='color:red;'>FillArray : </span><br>");
+    a.fill("ISI");
+    document.write(a);
+    document.write("<br>");
+    document.write("<span style='color:green;'>foreach() Method:</span><br>");
+    var x = ["Saman", "Azlan", "Aqsa", "Roshany","Ali"];
+    document.write(" Array : ");
+    document.write(x);
+    document.write("<br>");
+    document.write("forEach : <br>");
+    x.forEach(loop);
+
+    function loop(value,index){
+        document.write(index + " : " + value + "<br>");
+    }
+    document.write("<br>");
+    document.write("<span style='color:green;'>Before map() array value : </span><br>");
+         var ary = [6,9,10,14];
+         document.write(ary);
+         document.write("<br>");
+         document.write("<span style='color:green;'>After map() array value : </span><br>");
+         var b = ary.map(function(x){
+         return x*10;
+         });
+         document.write(b);
+    </script>
+</body>
+</html>

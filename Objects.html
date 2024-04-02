@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectts</title>
+</head>
+<body>
+    <h2 style="color:#DC143C;">Array Methods:</h2>
+    <script>
+         document.write("<span style='color:green;'>Object</span><br>");
+        var a = {
+            fname : 'Saman' ,
+            lname : 'Rani' ,
+            age : 22 ,
+            fMovies : ['kpk' , 'k2' , 'dhoom'] ,
+            salery : function() {
+                return 80000;
+            } ,
+            fullName : function() {
+                return this.fname + " " + this.lname;
+            } ,
+         living : {
+            city : 'GRW' ,
+            country : 'Pakistan'
+         }
+        };
+        document.write("fname : ");
+        document.write(a.fname + "<br>");
+        document.write("lname : ");
+        document.write(a.lname + "<br>");
+        document.write("age : ");
+        document.write(a.age + "<br>");
+        document.write("fmovies in array : ");
+        document.write(a.fMovies.join(" - ") + "<br>");
+        document.write("salery in function : ");
+        console.log(a.salery());
+        console.log(a);
+        document.write(a.salery() + "<br>");
+        document.write("fullname in function : ");
+        document.write(a.fullName() + "<br>");
+        document.write("Object within Object : ");
+        document.write(a.living.city + " , ");
+        document.write(a.living.country + "<br>");
+        document.write("<br>");
+        document.write("<span style='color:green;'>Create object in new way:</span><br>");
+        var person = new Object();
+        person.fname = 'Roshany';
+        person.lname = 'Usman';
+        person.gender = 'Female';
+        document.write("fname : ");
+        document.write(person.fname + "<br>");
+        document.write("lname : ");
+        document.write(person.lname + "<br>");
+        document.write("age : ");
+        document.write(person['gender'] + "<br>");
+        console.log(person);
+        document.write("<br>");
+        document.write("<span style='color:green;'>Array of object</span><br>");
+       var a = [
+          {fname : 'Saman',lname : 'Rani'} ,
+          {fname : 'Roshany',lname : 'Usman'} ,
+          {fname : 'Azlan',lname: 'Ali'} ,
+          {fname : 'Sadia',lname : 'bibi'}
+       ];
+       console.log(a);
+       for(var b = 0; b < a.length; b++ ){
+        document.write(b + " index values : ");
+        document.write(a[b].fname + " " + a[b].lname + " <br>"); 
+       };
+        document.write("<br>");
+       document.write("<span style='color:green;'>const variable with array & object</span><br>");
+    const x = [10 , 20 , 30 , 40];
+    document.write("const <span style='color:purple;'>array</span> value : ");
+    document.write(x + "<br>");
+    x[1] = 50;
+    x[3] = 60;
+    document.write("updated <span style='color:purple;'>array</span> value : ");
+    document.write(x + "<br>");
+    const y = {
+        name : "Saman",
+        lname : "Rani"
+    };
+    document.write("const <span style='color:purple;'>object</span> value : ");
+    document.write(y.name + " " + y.lname + "<br>");
+    y.name = "Azlan";
+    y.lname = "Ali";
+    document.write("updated <span style='color:purple;'>object</span> value : ");
+    document.write(y.name + " " + y.lname +"<br>");
+    console.log(x);
+    console.log(y);
+    </script>
+</body>
+</html>

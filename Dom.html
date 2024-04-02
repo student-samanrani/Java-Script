@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id ="wrapper">
+        <div id="header" class ="abc" style="border:5px solid yellow;" onClick="xyz()"><!-- these attribbutes like class,style aur onclick have no use in output but only for using DOM methods -->
+           <div class="first"> Pak Agent</div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Sub Heading</h2>
+            <img src="images/flower.jpg" width="200px"  style="float: left; margin-right: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id velit quis nulla feugiat pharetra nec non nisi.Nam id velit quis nulla feugiat pharetra nec non nisi. Integer luctus ante est, in tincidunt elit lacinia ut. Suspendisse potenti. Nullam pellentesque ex eu nibh gravida, ut consectetur elit pharetra. Donec commodo mattis vestibulum. Donec et turpis ut dolor dapibus eleifend. Sed suscipit urna at mauris tempus convallis. Duis maximus libero nisi, et dignissim ipsum placerat vitae. Ut fringilla sapien id est gravida, vel semper nisi auctor. Ut fringilla ipsum quis porta condimentum. Proin id lectus bibendum, porttitor dolor eget, varius libero. Maecenas auctor velit vel purus venenatis elementum. 
+                Suspendisse pharetra urna ac sem volutpat consectetur.</p>
+        <ul id="list">
+            <li>Lorem ipsum dolor, consectetur adipiscing elit.</li>
+            <li>Nam id velit nulla feugiat pharetra nec non nisi.</li>
+            <li>Suspendisse pharetra volutpat consectetur.</li>
+            <li>Lorem ipsum dolor, consectetur adipiscing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit. </p>        
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            pakagent@copyright 2024.
+        </div>
+    </div>
+    <script src="dom-get$set.js"></script>
+    <script src="dom-querySelectors.js"></script>
+</body>
+</html>

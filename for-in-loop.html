@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Loop</title>
+</head>
+<body>
+    <h2 style="color:rgb(226, 43, 43);">For In Loop:</h2>
+    <script>
+         document.write("<span style='color:green;'>display Object using for-in loop</span><br>");
+        var a = {
+            fname : 'Saman' ,
+            lname : 'Rani' ,
+            age : 22 ,
+            fMovies : ['kpk' , 'k2' , 'dhoom'] 
+        };
+        for (var key in a) {
+    if (Array.isArray(a[key])) {
+        document.write(key + " : " + a[key].join(" - ") + "<br>");
+    } else {
+        document.write(key + " : " + a[key] + "<br>");
+    }
+}
+document.write("<br>");
+document.write("<span style='color:green;'>display Object Function using for-in loop</span><br>");
+var obj = {
+           fname : 'Sadia' ,
+            lname : 'Rani' ,
+           salery : function() {
+                return 80000;
+            } ,
+            fullName : function() {
+                return this.fname + " " + this.lname;
+            } 
+}
+for (var key in obj) {
+    if (typeof obj[key] === 'function') {
+        document.write(key + ": " + obj[key]() + "<br>");
+    } else {
+        document.write(key + ": " + obj[key] + "<br>");
+    }
+}
+    </script>
+</body>
+</html>

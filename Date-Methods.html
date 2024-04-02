@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+</head>
+<body>
+    <h2 style="color:rgb(73, 226, 43);">Date Methods:</h2>
+    <script>
+     var now = new Date('Nov 02 2002');
+     document.write("<span style='color:#FF5733;'>toDateString </span> : ");
+     document.write(now.toDateString());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getDate </span> : ");
+     document.write(now.getDate());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getFullYear </span> : ");
+     document.write(now.getFullYear());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getMonth </span> : ");
+     document.write(now.getMonth());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getDay </span> : ");
+     document.write(now.getDay());
+     document.write("<br>");
+     var cur = new Date();
+     document.write("<span style='color:#FF5733;'>getHours </span> : ");
+     document.write(cur.getHours());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getMinutes </span> : ");
+     document.write(cur.getMinutes());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getSeconds </span> : ");
+     document.write(cur.getSeconds());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>getMilliseconds </span> : ");
+     document.write(cur.getMilliseconds());
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setDate </span> : ");
+     cur.setDate(16);
+     document.write(cur);
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setFullYear </span> : ");
+     cur.setFullYear(1999);
+     document.write(cur);
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setMonth </span> : ");
+     cur.setMonth(5);
+     document.write(cur);
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setHours </span> : ");
+     cur.setHours(6);
+     document.write(cur);
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setMinutes </span> : ");
+     cur.setMinutes(19);
+     document.write(cur);
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setseconds </span> : ");
+     cur.setSeconds(59);
+     document.write(cur);
+     document.write("<br>");
+     document.write("<span style='color:#FF5733;'>setMilliseconds </span> : ");
+     cur.setMilliseconds(999);
+     document.write(cur);
+     document.write("<br>");
+    </script>
+</body>
+</html>

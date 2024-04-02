@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condiotional operator</title>
+</head>
+<body>
+    <h2 style="color:rgb(226, 131, 43);">Conditonal Operator:</h2>
+    <script>
+        var x=15;
+        var z;
+        (x>10)? z ="True": z="False";
+        document.write("If X is greater then 10 then Z would true using Ternary operator : &nbsp;");
+        document.write(z);
+        document.write("<br>");
+        var a=120;
+        var b;
+        (a == 100)? b ="True": b="False";
+        document.write("If A is equal to 100 then B would true using Ternary operator : &nbsp;");
+        document.write(b);
+        document.write("<br>");
+        document.write("If A is greater then or equal to 120 then B would true using Ternary operator : &nbsp;");
+        b = (a >= 120) ? "True": "False";
+        document.write(b);
+        document.write("<br>");
+        b = "value of B is: &nbsp;" + (a != 120 ? "True": "False");
+        document.write(b);
+    </script>
+</body>
+</html>

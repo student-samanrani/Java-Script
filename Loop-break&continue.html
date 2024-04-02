@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lopp and bbreak&continue statements</title>
+</head>
+<body>
+    <h2 style="color:rgb(226, 43, 165);">LOOPS :</h2>
+    <script>
+         document.write("<span style='color:green;'>Increment While Loop:</span>");
+         document.write("<br>");
+    var a =1;
+    document.write("<ul>");
+    while(a <= 5){
+        document.write("<li>" + a + ") &nbsp;&nbsp; Hey! Saman Ali. </li>");
+        a=a+1;
+    }
+    document.write("</ul>");
+         document.write("<span style='color:green;'>Decrement While Loop:</span>");
+         document.write("<br>");
+         document.write("<ul>");
+    var b =5;
+    
+    while(b >= 1){
+        document.write( "<li>"+  b + ") &nbsp;&nbsp;  Hey! Saman Ali. </li>");
+        b=b-1;
+    }
+    document.write("</ul>");
+    var a =1;
+    document.write("<span style='color:green;'> Do While Loop:</span><br>");
+    do{
+        document.write(a + ") &nbsp;&nbsp; Hey! Saman Ali.<br>");
+        a++;
+    }while(a <= 5)
+    document.write("<span style='color:green;'>For Loop:</span><br>");
+    for(var a=10; a >= 5; a--){
+        document.write(a + ") &nbsp;&nbsp; Hey! Saman Ali.<br>");
+    }
+    document.write("<span style='color:green;'>Break and Continue:</span><br>");
+    for(var a=1; a <= 7; a++){
+        if(a == 3){
+            document.write("Continue at Number 3.<br>"); 
+            continue;
+        }
+        if(a == 6){
+            document.write("Breakat at Number 6.<br>"); 
+            break;
+        }
+        document.write("Number : "+ a +"<br>" );
+    }
+</script>
+</body>
+</html>
